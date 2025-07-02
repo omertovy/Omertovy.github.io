@@ -3,74 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Precision Site Scanning</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Site Scan Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0d1117;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+
+    .hero {
+      position: relative;
+      background: url("https://images.unsplash.com/photo-1581091215367-059f1ec7a9a4?fit=crop&w=1600&q=80") center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 40px;
+      font-size: 2.5em;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #0d1117;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      flex: 1 1 300px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background: #0d1117;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.8em;
+        padding: 15px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <div class="container">
-      <h1>Precision Site Scanning</h1>
-      <p>3D Walkthroughs, As-Built Documentation & MEP Verification</p>
-    </div>
+    <h1>Site Scan Studio</h1>
+    <p>3D Walkthroughs • MEP Documentation • Reality Capture</p>
   </header>
 
-  <section class="intro container">
-    <h2>Why Choose Us</h2>
-    <p>We help general contractors, architects, and developers avoid costly mistakes by providing high-resolution 3D scans of construction sites using LiDAR and Matterport technology. Capture every detail of rough framing, MEP, and final finishes with measurable accuracy and remote walkthrough capabilities.</p>
+  <div class="hero">
+    <h2>Capture Every Detail. Before It's Covered Up.</h2>
+  </div>
+
+  <section>
+    <h2>Walk the Job Without Leaving Your Office</h2>
+    <p>Review rough MEP, layout progress, and trade coordination from anywhere — thanks to high-res, interactive scans.</p>
+    <iframe src="https://discover.matterport.com/space/GFFqzQMjGDT?play=1" allowfullscreen allow="xr-spatial-tracking"></iframe>
   </section>
 
-  <section class="services container">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service">
-        <h3>3D Jobsite Scanning</h3>
-        <p>Get accurate, immersive digital twins of your site. Ideal for progress tracking, client updates, or as-built documentation.</p>
+  <section>
+    <h2>Why Builders Use Our Scans</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>✔ Document Rough MEP</h3>
+        <p>Prevent confusion and callbacks with verified documentation of in-wall plumbing, electrical, and HVAC.</p>
       </div>
-      <div class="service">
-        <h3>MEP Documentation</h3>
-        <p>Capture rough-ins, conduit runs, and framing before drywall. Prevent rework by verifying systems in-place.</p>
+      <div class="feature">
+        <h3>✔ 3D As-Built Records</h3>
+        <p>Deliver a virtual twin of your job site before drywall goes up — for warranty, remodels, and future trades.</p>
       </div>
-      <div class="service">
-        <h3>CAD & Measurement Exports</h3>
-        <p>Deliverables include CAD-ready files, floorplans, and measurement tools — all sharable with your team and subs.</p>
+      <div class="feature">
+        <h3>✔ Accurate Field Measurements</h3>
+        <p>Measure critical dimensions like cabinet clearances, stud spacing, or ceiling drops — all from your phone or desktop.</p>
       </div>
     </div>
   </section>
 
-  <section class="demo container">
-    <h2>Live 3D Walkthrough</h2>
-    <p>Experience an example Matterport scan from a recent project.</p>
-    <div class="iframe-container">
-      <iframe src="https://discover.matterport.com/space/GFFqzQMjGDT?play=1" 
-              frameborder="0" 
-              allowfullscreen 
-              allow="xr-spatial-tracking">
-      </iframe>
-    </div>
-  </section>
-
-  <section class="contact container">
-    <h2>Get In Touch</h2>
-    <p>Ready to scan your next site or request a sample deliverable? Send us a message:</p>
-    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+  <section>
+    <h2>On-Site Technology</h2>
+    <img src="https://images.unsplash.com/photo-1602751587427-31fa6dd227cc?fit=crop&w=1600&q=80" alt="3D scanning gear on job site">
+    <p>We use industry-grade tools like the Matterport Pro3 and Leica BLK360 to ensure accuracy, consistency, and clarity in every scan.</p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>© 2025 Precision Site Scanning — Built for builders, by builders.</p>
-    </div>
+    &copy; 2025 Site Scan Studio — Built for Builders.
   </footer>
 
 </body>
